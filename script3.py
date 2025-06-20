@@ -100,3 +100,7 @@ plt.xlim(0, 8)
 plt.grid(True, linestyle=':', which='both')
 plt.legend()
 plt.show()
+
+print("\nSaving full time-domain solution to 'solution_data.npy'...")
+np.save('solution_data.npy', solution_over_time)
+print("Save complete.")
